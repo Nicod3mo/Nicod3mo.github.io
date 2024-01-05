@@ -4009,3 +4009,12 @@ input, select, textarea {
 	body.is-mobile.landing #footer {
 		background-color: #1d242a;
 	}
+	.pythonic {
+		font-size: 5em; /* Adjust the size as needed */
+		margin: 0;
+    	padding: 0;
+    	border: 0;
+		background-image: repeating-linear-gradient(to right, 
+  		#306998, #418F6E 10%, #FFD43B 20%
+		);
+	  }
