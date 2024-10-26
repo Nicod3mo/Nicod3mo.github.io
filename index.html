@@ -1,0 +1,222 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>Nicolas Segovia</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+
+	<style>
+		.tab {
+			display: inline-block;
+			padding: 10px 20px;
+			cursor: pointer;
+			background-color: lightgray;
+		}
+
+		.active {
+			background-color: gray;
+		}
+
+		.content-section {
+			display: none;
+		}
+
+		.content-section.active {
+			display: block;
+		}
+	</style>
+</head>
+
+<body class="landing is-preload">
+
+	<!-- Page Wrapper -->
+	<div id="page-wrapper">
+
+		<!-- Header -->
+		<header id="header" class="alt">
+			<h1><a href="index.html">Nicolas Segovia</a></h1>
+			<nav id="nav">
+			</nav>
+		</header>
+
+		<!-- Banner -->
+		<section id="banner">
+			<div class="inner">
+				<h2>Nicolas Segovia</h2>
+				<p>Senior Data Analyst and Python Developer</p>
+			</div>
+			<a href="#one" class="more scrolly">Learn More</a>
+		</section>
+
+		<!-- One -->
+		<section id="one" class="wrapper style1 special">
+			<div class="inner">
+				<img class="lol" src="images/pic.jpg" alt="" />
+				<header class="major">
+					<h2>Who Am I</h2>
+					<p>Hi! my name is Nicolas, and what you're about to see is some projects that I've made in the
+						last time with not all of the technologies I know but some of them such as Power BI, Python and
+						Golang. I have a strong philosophy that consists in giving my absolute best in everything that I
+						plan to accomplish and with programming there's no difference. I hope that you enjoy taking a look at
+						my portfolio, it is a showcase of my skills and my passion for delivering impactful results.</p>
+				</header>
+
+			</div>
+		</section>
+
+		<!-- Tabs for Python and Power BI -->
+		<div>
+			<div class="pythonic tab active" id="python-tab" onclick="toggleSection('python')">
+				<h6>PYTHON</h6>
+			</div>
+			<div class="pythonic tab" id="powerbi-tab" onclick="toggleSection('powerbi')">
+				<h6>POWER BI</h6>
+			</div>
+		</div>
+		<!-- Two -->
+		<section id="python" class="content-section active">
+			<section id="two" class="wrapper alt style2">
+				<section class="spotlight">
+					<div class="image"><img src="images/pic01.jpg" alt=""></div>
+					<div class="content">
+						<h2><a href="https://github.com/Nicod3mo/TwitterBot">Twitter Bot</a></h2>
+						<p>A Twitter bot using Twitter's API which tells you a
+							quote from a random philosopher (using another API) as well as its author followed by the
+							actual
+							value of Bitcoin and Ethereum (using CoinGecko's
+							API)</p>
+					</div>
+				</section>
+				<section class="spotlight">
+					<div class="image"><img src="images/pic02.jpg" alt=""></div>
+					<div class="content">
+						<h2><a href="https://github.com/Nicod3mo/Movies-CRUD">DRF Movies API REST</a></h2>
+						<p>A RESTful movies CRUD API using Django REST Framework with an authentication token
+							system where you can request a list of all the saved movies at once or just a single one</p>
+					</div>
+				</section>
+				<section class="spotlight">
+					<div class="image"><img src="images/pic05.jpg" alt=""></div>
+					<div class="content">
+						<h2><a href="https://github.com/Nicod3mo/Excel-inbound-link-gatherer">Excel inbound link
+								gatherer</a></h2>
+						<p>Script that extracts every inbound link for each row in the first column of an Excel file and
+							creates Excel files for each row. One using BeautifulSoup and the other one using Mozscape's
+							paid API</p>
+					</div>
+				</section>
+				<section class="spotlight">
+					<div class="image"><img src="images/pic06.jpg" alt=""></div>
+					<div class="content">
+						<h2><a href="https://github.com/Nicod3mo/Movies-CRUD">Ethereum wallet last tx and data</a></h2>
+						<p>Put an ethereum address and etherscan api key and this code will tell you how much balance it
+							has, the value sent or received in the last transaction and its balance multiplied by
+							ethereum's current price in ARS and USD</p>
+					</div>
+				</section>
+				<section class="spotlight">
+					<div class="image"><img src="images/pic03.jpg" alt=""></div>
+					<div class="content">
+						<h2><a href="https://github.com/Nicod3mo/Proyecto-CRUD-simple-Django">Notes Page</a></h2>
+						<p>A CRUD webpage with Django where you can write notes for your daylife</p>
+					</div>
+				</section>
+				<section class="spotlight">
+					<div class="image"><img src="images/pic04.jpg" alt=""></div>
+					<div class="content">
+						<h2><a href="https://github.com/Nicod3mo/albumswebsitedjango">Musical Albums Page</a></h2>
+						<p>An albums webpage with
+							class based views, a PostgreSQL database, user
+							authentication, Bootstrap and Pillow (not finished yet)</p>
+					</div>
+				</section>
+			</section>
+		</section>
+		<section id="powerbi" class="content-section">
+			<section id="two" class="wrapper alt style2">
+				<section class="spotlight">
+					<div class="image"><img src="images/pbi/cafeTurco.jpg" alt=""></div>
+					<div class="content">
+						<h2>Coffee dashboard</h2>
+						<p>An interactive Power BI dashboard that visually represents different coffee types by
+							recreating their unique flavor profiles. It uses conditional values to showcase the varying
+							amounts of coffee, water, and other ingredients for each type, providing a detailed
+							breakdown of popular coffee preparations.</p>
+					</div>
+				</section>
+			</section>
+		</section>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="https://www.linkedin.com/in/nicolassegovia1/" class="icon brands fa-linkedin"><span
+							class="label">Linkedin</span></a></li>
+				<li><a href="https://github.com/Nicod3mo" class="icon brands fa-github"><span
+							class="label">Github</span></a></li>
+				<li><a href="mailto:nicolassegovia1337@gmail.com" class="icon solid fa-envelope"><span
+							class="label">Email</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<a href="mailto:nicolassegovia1337@gmail.com">
+					<li>Contact me!</li>
+				</a>
+			</ul>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		function toggleSection(section) {
+			// Hide all sections
+			document.getElementById('python').classList.remove('active');
+			document.getElementById('powerbi').classList.remove('active');
+			document.getElementById('python-tab').classList.remove('active');
+			document.getElementById('powerbi-tab').classList.remove('active');
+
+			// Show the selected section
+			document.getElementById(section).classList.add('active');
+			document.getElementById(section + '-tab').classList.add('active');
+		}
+	</script>
+
+</body>
+<script>
+	function animateTitle() {
+		i >= message.length - 1 ? (i = 0) : i++,
+			(document.title = message[i]),
+			setTimeout("animateTitle()", 200);
+	}
+	var message = [
+		"▁▂▃▄▅▆▇",
+		"▂▁▂▃▄▅▆",
+		"▃▂▁▂▃▄▅",
+		"▄▃▂▁▂▃▄",
+		"▅▄▃▂▁▂▃",
+		"▆▅▄▃▂▁▂",
+		"▇▆▅▄▃▂▁",
+		"▆▇▆▅▄▃▂",
+		"▅▆▇▆▅▄▃",
+		"▄▅▆▇▆▅▄",
+		"▃▄▅▆▇▆▅",
+		"▂▃▄▅▆▇▆",
+	],
+		i = 0;
+	animateTitle();
+</script>
+
+</html>
