@@ -12,17 +12,6 @@
 	</noscript>
 
 	<style>
-		.tab {
-			display: inline-block;
-			padding: 10px 20px;
-			cursor: pointer;
-			background-color: lightgray;
-		}
-
-		.active {
-			background-color: gray;
-		}
-
 		.content-section {
 			display: none;
 		}
@@ -71,13 +60,23 @@
 		</section>
 
 		<!-- Tabs for Python and Power BI -->
-		<div>
-			<div class="pythonic tab active" id="python-tab" onclick="toggleSection('python')">
-				<h6>PYTHON</h6>
-			</div>
-			<div class="pythonic tab" id="powerbi-tab" onclick="toggleSection('powerbi')">
-				<h6>POWER BI</h6>
-			</div>
+		<div class="portfolio-tabs" role="tablist" aria-label="Project categories">
+			<button class="skill-tab active" id="python-tab" type="button" role="tab" aria-controls="python"
+				aria-selected="true" onclick="toggleSection('python')">
+				<span class="skill-tab__icon icon brands fa-python" aria-hidden="true"></span>
+				<span class="skill-tab__copy">
+					<span class="skill-tab__label">Python</span>
+					<span class="skill-tab__detail">Automation & APIs</span>
+				</span>
+			</button>
+			<button class="skill-tab" id="powerbi-tab" type="button" role="tab" aria-controls="powerbi"
+				aria-selected="false" onclick="toggleSection('powerbi')">
+				<span class="skill-tab__icon icon solid fa-chart-bar" aria-hidden="true"></span>
+				<span class="skill-tab__copy">
+					<span class="skill-tab__label">Power BI</span>
+					<span class="skill-tab__detail">Dashboards & insights</span>
+				</span>
+			</button>
 		</div>
 		<!-- Two -->
 		<section id="python" class="content-section active">
@@ -96,7 +95,7 @@
 				<section class="spotlight">
 					<div class="image"><img src="images/pic02.jpg" alt=""></div>
 					<div class="content">
-						<h2><a href="https://github.com/Nicod3mo/Movies-CRUD">DRF Movies API REST</a></h2>
+						<h2><a href="https://github.com/Nicod3mo/Movies-CRUD">DRF Movies REST API</a></h2>
 						<p>A RESTful movies CRUD API using Django REST Framework with an authentication token
 							system where you can request a list of all the saved movies at once or just a single one</p>
 					</div>
@@ -191,6 +190,10 @@
 			// Show the selected section
 			document.getElementById(section).classList.add('active');
 			document.getElementById(section + '-tab').classList.add('active');
+			document.getElementById(section + '-tab').setAttribute('aria-selected', 'true');
+
+			var inactiveSection = section === 'python' ? 'powerbi' : 'python';
+			document.getElementById(inactiveSection + '-tab').setAttribute('aria-selected', 'false');
 		}
 	</script>
 
