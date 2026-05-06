@@ -5,6 +5,9 @@
 	<title>Nicolas Segovia</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
 	<noscript>
@@ -26,6 +29,12 @@
 
 	<!-- Page Wrapper -->
 	<div id="page-wrapper">
+
+		<button class="audio-launcher" id="webamp-toggle" type="button" aria-controls="webamp-dock"
+			aria-expanded="false">
+			<span class="audio-launcher__text">Don't click me</span>
+		</button>
+		<div class="webamp-dock" id="webamp-dock" aria-live="polite" aria-label="Webamp player"></div>
 
 		<!-- Header -->
 		<header id="header" class="alt">
@@ -179,6 +188,7 @@
 	<script src="assets/js/breakpoints.min.js"></script>
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/main.js"></script>
+	<script type="module" src="assets/js/webamp-player.js"></script>
 	<script>
 		function toggleSection(section) {
 			// Hide all sections
